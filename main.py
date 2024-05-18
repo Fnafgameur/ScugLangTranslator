@@ -73,7 +73,7 @@ def normal_to_scug():
     choice = "y"
 
     while choice != "n":
-        text = input("Enter the text: ")
+        text = input("Enter the normal text: ")
         result = ""
 
         for char in text:
@@ -90,7 +90,7 @@ def normal_to_scug():
                 result = "Unexpected character at position " + str(text.index(char) + 1) + ": " + char
 
         print("result : " + result)
-        choice = (input("Do you want to continue? (Y/n): ")
+        choice = (input("Do you want to continue on this mode? (Y/n): ")
                   .replace(" ", "")
                   .lower())
     main()
@@ -99,8 +99,8 @@ def normal_to_scug():
 def scug_to_normal():
     choice = "y"
 
-    while choice != "n" or choice != "N" or choice != "no" or choice != "No":
-        text = input("Enter the text: ")
+    while choice != "n":
+        text = input("Enter the scug text: ")
         result = ""
         char = 0
 
@@ -134,7 +134,7 @@ def scug_to_normal():
 
         print("result : " + result)
 
-        choice = (input("Do you want to continue? (Y/n): ")
+        choice = (input("Do you want to continue on this mode? (Y/n): ")
                   .replace(" ", "")
                   .lower())
     main()
