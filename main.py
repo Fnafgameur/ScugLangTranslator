@@ -19,14 +19,14 @@ words = {
     "P": "Wwaw",
     "Q": "Aa",
     "R": "Awawa",
-    "S": "Awaw",
+    "S": "Awaa",
     "T": "Aww",
     "U": "Awwa",
     "V": "Wawwa",
     "W": "W",
     "X": "Wawaa",
     "Y": "Awaww",
-    "Z": "Aawaw",
+    "Z": "Awaw",
     " ": "Wawaw"
 }
 
