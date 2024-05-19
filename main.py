@@ -41,6 +41,7 @@ def main():
         print("2. Scug text to Normal text")
         print("3. Dictionary")
         print("q. Exit")
+        print("")
         choice = (input("Enter your choice: ")
                   .replace(" ", "")
                   .lower())
@@ -57,7 +58,7 @@ def main():
                 print("")
                 print("Exiting...")
                 time.sleep(1)
-                break
+                exit()
             case "3":
                 print("")
                 display_dictionary()
@@ -90,6 +91,9 @@ def normal_to_scug():
                 result = "Unexpected character at position " + str(text.index(char) + 1) + ": " + char
 
         print("result : " + result)
+
+        print("")
+
         choice = (input("Do you want to continue on this mode? (Y/n): ")
                   .replace(" ", "")
                   .lower())
@@ -133,6 +137,8 @@ def scug_to_normal():
                 break
 
         print("result : " + result)
+
+        print("")
 
         choice = (input("Do you want to continue on this mode? (Y/n): ")
                   .replace(" ", "")
